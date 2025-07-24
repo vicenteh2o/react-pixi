@@ -1,9 +1,9 @@
-import { Stage } from "@pixi/react";
 import { useEffect, useState, useCallback } from "react";
-import { calculateCanvasSize } from "../../helpers/common";
+import { Stage } from "@pixi/react";
 import { MainContainer } from "./MainContainer/MainContainer";
+import { calculateCanvasSize } from "../../helpers/common";
 
-export const Experience = () => {
+const Experience = () => {
   const [canvasSize, setCanvasSize] = useState(calculateCanvasSize);
 
   const updateCanvasSize = useCallback(() => {
@@ -21,3 +21,4 @@ export const Experience = () => {
     </Stage>
   );
 };
+export default Experience;
