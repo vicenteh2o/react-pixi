@@ -1,6 +1,7 @@
 import { Stage } from "@pixi/react";
 import { useEffect, useState, useCallback } from "react";
 import { calculateCanvasSize } from "../../helpers/common";
+import { MainContainer } from "./MainContainer/MainContainer";
 
 export const Experience = () => {
   const [canvasSize, setCanvasSize] = useState(calculateCanvasSize);
@@ -14,5 +15,9 @@ export const Experience = () => {
     return () => window.removeEventListener("resize", updateCanvasSize);
   }, [updateCanvasSize]);
 
-  return <Stage width={canvasSize.width} height={canvasSize.height}></Stage>;
+  return (
+    <Stage width={canvasSize.width} height={canvasSize.height}>
+      <MainContainer canvasSize={canvasSize} />
+    </Stage>
+  );
 };
