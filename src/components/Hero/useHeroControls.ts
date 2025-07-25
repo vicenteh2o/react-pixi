@@ -9,7 +9,7 @@ export const useHeroControls = () => {
     const direction = DIRECTION_KEYS[e.code];
     if (!direction) return;
     setHeldDirection((prev) => {
-      if (!isKeyDown) {
+      if (isKeyDown) {
         return prev.includes(direction) ? prev : [direction, ...prev];
       }
       return prev.filter((dir) => dir !== direction);

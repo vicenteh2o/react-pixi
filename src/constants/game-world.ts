@@ -19,3 +19,6 @@ export const DIRECTION_KEYS: Record<string, Direction> = {
   KeyA: "LEFT",
   KeyD: "RIGHT",
 };
+
+export const MOVE_SPEED = 0.03;
+export const ANIMATION_SPEED = 0.2;
