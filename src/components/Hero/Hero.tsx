@@ -86,7 +86,7 @@ export const Hero = ({ texture, onMove }: IHeroProps) => {
           x={position.current.x}
           y={position.current.y}
           scale={0.5}
-          anchor={[1, 0.5]}
+          anchor={[1, 0.8]}
         />
       )}
     </Container>

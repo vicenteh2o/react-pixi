@@ -79,3 +79,7 @@ export const handleMovement = (
     completed: false,
   };
 };
+
+export const lerp = (start: number, end: number) => {
+  return start + (end - start) * 0.03;
+};

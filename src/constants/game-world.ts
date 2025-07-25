@@ -22,3 +22,4 @@ export const DIRECTION_KEYS: Record<string, Direction> = {
 
 export const MOVE_SPEED = 0.03;
 export const ANIMATION_SPEED = 0.2;
+export const ZOOM = 3;
